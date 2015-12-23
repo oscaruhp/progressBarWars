@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link href="ProgressBarWars.css" rel="stylesheet" />
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="ProgressBarWars.js"></script>
+      <style>
+          body{text-align: center;}
+      </style>
+  </head>
+  <body >
+    <header>
+        
+		<h1>ProgressBar StarWars</h1>
+	</header>
+	   
+        
+      <h1>Example 1 </h1>  
+      <div id="vader"></div>
+      <div id="yoda"></div>
+      <div id="obi"></div>
+      <div id="windu"></div>
+      <script>
+        var vd=$("#vader").ProgressBarWars({porcentaje:20,estilo:"vader"});
+        var yd=$("#yoda").ProgressBarWars({porcentaje:30,estilo:"yoda"});
+        var ob=$("#obi").ProgressBarWars({porcentaje:50,estilo:"obi"});
+        var wd=$("#windu").ProgressBarWars({porcentaje:80,estilo:"windu"});
+      </script>
+      
+      <input type="button" value="Vader 70%" onclick="vd.mover(70);">
+      <input type="button" value="Yoda 90%" onclick="yd.mover(90);">
+      <input type="button" value="Obi 60%" onclick="ob.mover(60);">
+      <input type="button" value="windu 50%" onclick="wd.mover(50);">
+      <br/><br/>
+       <img src="img/Lasers.png"/>
+      
+      <h1>Example 2 (Time change)</h1>  
+      
+      <div id="vaderTime"></div>
+      <div id="yodaTime"></div>
+      <div id="obiTime"></div>
+      <div id="winduTime"></div>
+      <script>
+        $("#vaderTime").ProgressBarWars({porcentaje:80,estilo:"vader",tiempo:5980});
+        $("#yodaTime").ProgressBarWars({porcentaje:40,estilo:"yoda",tiempo:1000});
+        $("#obiTime").ProgressBarWars({porcentaje:90,estilo:"obi",tiempo:1800});
+        $("#winduTime").ProgressBarWars({porcentaje:5,estilo:"windu",tiempo:1900});
+                
+      </script>
+      <img src="img/starwars-logo.png"/>
+       <h1>Example 3 (Size change)</h1>  
+      
+      <div id="vaderSize"></div>
+      <div id="yodaSize"></div>
+      <div id="obiSize"></div>
+      <div id="winduSize"></div>
+    <script>
+        $("#vaderSize").ProgressBarWars({porcentaje:80,estilo:"vader",tiempo:5980,alto:"30px"});
+        $("#yodaSize").ProgressBarWars({porcentaje:40,estilo:"yoda",tiempo:1000,alto:"15px"});
+        $("#obiSize").ProgressBarWars({porcentaje:90,estilo:"obi",tiempo:1800,alto:"3px"});
+        $("#winduSize").ProgressBarWars({porcentaje:5,estilo:"windu",tiempo:1900,alto:"5px"});
+      </script>
+       
+		
+		   <h1>Example 4 (Color change)</h1>  
+      
+      <div id="example1"></div>
+      <div id="example2"></div>
+      <div id="example3"></div>
+      <div id="example4"></div>
+      <div id="example5"></div>
+      <div id="example6"></div>
+      <div id="example7"></div>
+      <div id="example8"></div>
+      <div id="example9"></div>
+      
+  <script>
+        $("#example1").ProgressBarWars({porcentaje:10,color:"#FF5722"});
+        $("#example2").ProgressBarWars({porcentaje:20,color:"#FDD835"});
+        $("#example3").ProgressBarWars({porcentaje:30,color:"#8E24AA"});
+        $("#example4").ProgressBarWars({porcentaje:40,color:"#827717"});
+      $("#example5").ProgressBarWars({porcentaje:50,color:"#5E35B1"});
+      $("#example6").ProgressBarWars({porcentaje:60,color:"#00E5FF"});
+      $("#example7").ProgressBarWars({porcentaje:70,color:"#6D4C41"});
+      $("#example8").ProgressBarWars({porcentaje:80,color:"#3F51B5"});
+      $("#example9").ProgressBarWars({porcentaje:90,color:"#8BC34A"});
+      
+      </script>
+      <img src="img/darth.jpg"/>
+	</body>
+	
+</html>
